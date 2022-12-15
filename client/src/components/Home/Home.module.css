@@ -1,0 +1,19 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 80px;
+    margin: 50px;
+}
+
+.containerHome{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+

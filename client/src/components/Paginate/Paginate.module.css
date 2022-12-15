@@ -1,0 +1,22 @@
+.pagination {
+    display: inline-block;
+    margin: 20px;
+}
+
+.pagination button{
+    
+    background: none;
+    appearance:none;
+    cursor: pointer;
+    width:60px;
+    transition:0.4s;
+    height: 40px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.pagination button:hover{
+    background-color: rgb(147, 147, 147);
+}
+

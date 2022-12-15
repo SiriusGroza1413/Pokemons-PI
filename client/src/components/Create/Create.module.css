@@ -1,0 +1,132 @@
+
+.inputContainer{
+    margin-top: 50px;
+    width: 800px;
+    height: 950px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: rgba(60, 60, 60, 0.762);
+    border: 4px solid #535354;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.327);
+    border-radius: 10px;
+    justify-content:flex-start;
+    justify-items: center;
+}
+
+.inputContainer h3{
+    background-color: black;
+    color: white;
+    margin: 8px;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+#buttonHome{
+    cursor: pointer;
+    background-color: rgba(247, 104, 104, 0.547);
+    margin-top: 5px;
+    height: 50px;
+}
+
+#buttonHome:hover{
+    background-color:rgb(255, 34, 34);
+    box-shadow: 0px 0px 60px 10px rgba(255, 34, 34);
+}
+
+#nameInput{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    letter-spacing: 0.2px;
+}
+
+#label{
+    display: flex;
+    color: white;
+}
+
+#inputN{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+#inputError{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid #ff0800;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h6{
+    color: red;
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+.typesContainer{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.typesContainer input[type="checkbox"]:checked {
+    color: greenyellow;
+}
+
+.typesDivs{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 90px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+#link{
+    border-color: #5b5b62 solid;
+    margin-top: 10px;
+}
+
+
+.inputError{
+    display: flex;
+    flex-direction: row;
+}
+.inputError h6{
+    padding: 9px;
+}
+
+.inputContainer button{
+    background-color: rgba(102, 255, 0, 0.671);
+    cursor: pointer;
+    border-radius: 3px;
+    border-style: none;
+    height: 50px
+}
+.inputContainer button:hover{
+    box-shadow: 0px 0px 10px 10px rgba(186, 255, 89, 0.703)
+}
+
+.inputContainer button:disabled{
+    background-color: rgb(91, 91, 91);
+    color: rgb(49, 49, 49);
+}

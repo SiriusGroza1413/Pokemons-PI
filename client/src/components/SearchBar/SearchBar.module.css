@@ -1,0 +1,35 @@
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    height: 47px;
+}
+
+.input{
+    border-radius: 5px;
+    background-color: rgba(211, 208, 208, 0.242);
+    margin-right: 7px;
+    width:280px;
+    height: 38px;
+}
+.input:hover{
+    opacity: 5;
+}
+
+
+.button {
+    background-color: #e1e1e1;
+    border: none;
+    color: rgb(1, 0, 0);
+    padding: 10px 13px;
+    text-align: center;
+    font-size: 19px;
+    margin: 3px -5px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {opacity: 1}
