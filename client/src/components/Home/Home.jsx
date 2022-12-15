@@ -8,7 +8,7 @@ import { useEffect, useState } from "react"
 
 
 /* --------------------------------------- IMPORTAR ACCIONES NECESARIAS PARA DESPACHARLAS -------------------------------- */
-import { getPokemons, getTypes, orderPokemons, filterByType, filterCreated, filterAttack, deletePokemon } from '../../redux/actions'
+import { getPokemons, getTypes, orderPokemons, filterByType, filterCreated } from '../../redux/actions'
 
 
 /* --------------------------------------- IMPORTAR CHILDREN COMPONENTS DE HOME ------------------------------------------ */
@@ -84,10 +84,6 @@ export default function Home(){
     }
 
 
-    function filterbyattack(){
-        dispatch(filterAttack())
-    }
-
 
     return(
         <div className={style.containerHome}>
@@ -134,11 +130,6 @@ export default function Home(){
                     
                 </select>
             </div>
-
-            <select onChange={() => filterbyattack()}>
-                <option value=""/>
-                <option value="-50">-50</option>
-            </select>
 
 
             <div className={style.paginate}>
