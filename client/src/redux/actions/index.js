@@ -103,8 +103,3 @@ export const cleanDetail = () => {
 
 ////////////////////////////////////////////////////
 
-export const filterAttack = () => {
-    return{
-        type:"FILTER_ATTACK",
-    }
-}
