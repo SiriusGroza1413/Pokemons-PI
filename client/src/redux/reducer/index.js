@@ -132,17 +132,6 @@ function rootReducer(state = initialState, action){
                 detail: []
             }
 
-        case "FILTER_ATTACK":
-            const allPokemonsCopyThree = state.allPokemons
-
-            const filteredThree = allPokemonsCopyThree.filter(p => p.attack <= 50)
-
-            return{
-                ...state,
-                pokemons: filteredThree
-            }
-
-
         default:
             return {...state};
     }
