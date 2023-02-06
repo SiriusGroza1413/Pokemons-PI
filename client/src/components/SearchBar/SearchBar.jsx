@@ -5,7 +5,7 @@ import { getPokemonByName } from '../../redux/actions'
 import styles from "./SearchBar.module.css"
 
 
-const SearchBar = () => {
+const SearchBar = ({currentPokemons, currentPage, setCurrentPage}) => {
 
     const [name, setName ] = useState("")
     const dispatch = useDispatch()

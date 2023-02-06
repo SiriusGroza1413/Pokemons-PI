@@ -88,7 +88,7 @@ export default function Home(){
     return(
         <div className={style.containerHome}>
             
-        <SearchBar/>
+        <SearchBar setCurrentPage={setCurrentPage}/>
 
             <div>
                 <button onClick={(e) => handleClick(e)}>
