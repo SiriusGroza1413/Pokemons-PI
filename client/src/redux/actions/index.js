@@ -12,7 +12,7 @@ import {GET_POKEMONS,
 
 export const getPokemons = () => {
     return function(dispatch){
-        const url = "http://localhost:3001/pokemons"
+        const url = "/pokemons"
         axios.get(url)
         .then(response => response.data)
         .then(data => dispatch({
@@ -26,7 +26,7 @@ export const getPokemons = () => {
 
 export const getTypes = () => {
     return function(dispatch){
-        const url = "http://localhost:3001/types"
+        const url = "/types"
         axios.get(url)
         .then(response => response.data)
         .then(data => dispatch({
@@ -56,7 +56,7 @@ export const filterCreated = (payload) =>{
 
 export const getPokemonByName = (payload) => {
     return function(dispatch){
-        axios.get(`http://localhost:3001/pokemons?name=${payload}`)
+        axios.get(`/pokemons?name=${payload}`)
         .then(response => response.data)
         .then(data => dispatch({
             type: GET_POKEMON_BY_NAME,
@@ -69,7 +69,7 @@ export const getPokemonByName = (payload) => {
 
 export const getPokemonById = (id) => {
     return function(dispatch){
-        axios.get(`http://localhost:3001/pokemons/${id}`)
+        axios.get(`/pokemons/${id}`)
         .then(response => response.data)
         .then(data => dispatch({
             type: GET_POKEMON_BY_ID,
@@ -90,7 +90,7 @@ export const orderPokemons = (payload) => {
 
 export const createPokemon = (payload) => {
     return function(dispatch){
-        let json = axios.post("http://localhost:3001/pokemons", payload)
+        let json = axios.post("/pokemons", payload)
     }
 }
 
