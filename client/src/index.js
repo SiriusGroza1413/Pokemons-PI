@@ -10,7 +10,7 @@ import axios from 'axios';
 
 //axios.defaults.baseURL = "http://localhost:3001"
 axios.defaults.baseURL = "https://pokemons-pi-production.up.railway.app/"
-
+console.log(axios)
 ReactDOM.render( // 6 ACA ES DONDE SE HACE LA CONEXION ENTRE REACT Y REDU, A TRAVES DEL PROVIDER, APUNTANDO A LA STORE QUE USARE
   <Provider store={store}>  
     <React.StrictMode>
