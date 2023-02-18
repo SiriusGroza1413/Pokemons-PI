@@ -109,9 +109,9 @@ const getPokemonsFromDbById = async (superId) => {
 /// O SE LOS TRAE DE LA BASE DE DATOS EN CASO DE QUE YA HAYA SIN VOLVER A HACER LA REQUEST ///
 const getPokemonsTypes = async () => {
     try { 
-        const thereAreTypes = Type.findAll()
+        const thereAreTypes = await Type.findAll()
 
-        if (!thereAreTypes) {
+        if (!thereAreTypes.length) {
             const typesEndpoint = await axios.get('https://pokeapi.co/api/v2/type')
             const info = typesEndpoint.data.results.map(type => type.name)
             info.forEach(type => {
@@ -119,7 +119,9 @@ const getPokemonsTypes = async () => {
                     where: {name: type}
                 })
             })
+            
             const bringTypesInDb = await Type.findAll()
+            //console.log(bringTypesInDb)
             return bringTypesInDb
 
         } else {
